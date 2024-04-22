@@ -1,0 +1,46 @@
+# Airflow directories
+logs/
+plugins/
+__pycache__/
+.env
+
+# Airflow files
+*.pyc
+*.log
+*.pid
+
+# Environment files
+airflow_env/
+
+# Docker related
+*.env
+
+# Ignore Docker volumes
+volumes/
+
+# Files that may appear in the root or dag folder
+*.csv
+*.dat
+*.out
+*.tmp
+
+# Dag specific files that should not be committed
+dags/__pycache__/
+dags/*.pyc
+dags/subdomains.txt
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Operating system generated files
+.DS_Store
+Thumbs.db
+
+# Docker ignore
+docker-compose.override.yml
+
+# Ignore all markdown except the root README.md
+*.md
+!readme.md
